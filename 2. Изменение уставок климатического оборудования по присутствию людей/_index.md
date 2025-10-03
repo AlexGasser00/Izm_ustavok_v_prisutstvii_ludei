@@ -14,7 +14,7 @@ Tset_current – активная уставка температуры (°C). O
 
 Проверяем people_presence (есть ли люди в помещении).
 
-Если есть люди (people_presence = 1): Если задана Tset_manual -> Tset_current = Tset_manual, Override_flag = 1, сбрасываемтаймер override_timer. Иначе -> Tset_current = Tset_people, Override_flag = 0.
+Если есть люди (people_presence = 1): Если задана Tset_manual -> Tset_current = Tset_manual, Override_flag = 1, сбрасываем таймер override_timer. Иначе -> Tset_current = Tset_people, Override_flag = 0.
 
 Если людей нет (people_presence = 0): Если задана Tset_manual -> Tset_current = Tset_manual, Override_flag = 1, запускаем таймер override_timer = 60 мин. Иначе -> Tset_current = Tset_off, Override_flag = 0.
 
@@ -24,4 +24,4 @@ Tset_current – активная уставка температуры (°C). O
 
 ### Блок-схема
 
-[drawio:./2. Изменение уставок климатического оборудования по присутствию людей.svg::211px:101px]
+[drawio:./_index.svg::211px:101px]
